@@ -5,94 +5,104 @@
 (function() {
     const myQuestions = [
         {
-            question: "Which of the following statements is correct?",
+            question: "Uszy Kota rozpłaszczone ku tyłowi oznaczają:",
             answers: {
-                A: "Real GDP is the total market value of the final goods and services produced in America for sale in a year valued in the prices of 1992",
-                B: "Your buying stock in the stock market is an example of investment spending",
-                C: "Potential Real GDP is always greater than Equilibrium Real GDP",
-                D: "Social security and welfare are examples of spending on infrastructure"
+                A: "Że Kot jest spokojny",
+                B: "Nic konkretnego, to automatyczna pozycja przyjmowana bezwiednie",
+                C: "Że Kot jest zły lub się boi",
+                D: "Quisque lorem tortor fringilla sed, vestibulum id"
+            },
+            correctAnswer: "C"
+        },
+        {
+            question: "Gruczoły wydzielające uspokajające feromony u Kota znajdują się:",
+            answers: {
+                A: "Między uszami",
+                B: "Na karku",
+                C: "W okolicach nosa",
+                D: "Cum sociis natoque penatibus et ultrices volutpat. "
             },
             correctAnswer: "A"
         },
         {
-            question: "The period of the business cycle in which real GDP is increasing is called the",
+            question: "Jedzenie tylko jedną stroną pyszczka oznacza:",
             answers: {
-                A: "expansion",
-                B: "Peak",
-                C: "Recession",
-                D: "Stagflation"
-            },
-            correctAnswer: "A"
-        },
-        {
-            question: "Assume that, in the population, 95 million people worked for pay last week, 5 million people did not work for pay but had been seeking a job, 5 million people did not work for pay and had not been seeking a job for the past several months, and 45 million were under age 16.  The unemployment rate, given these numbers, is",
-            answers: {
-                A: "5%",
-                B: "8%",
-                C: "10%",
+                A: "Że Kot po jednej stronie pyszczka posiada lepsze uzębienie, które lepiej rozdrabnia pokarm",
+                B: "Że Kot ma problemy z uzębieniem",
+                C: "Że Kot ma infekcję gardła",
                 D: "20%"
             },
             correctAnswer: "A"
         },
         {
-            question: "A type of unemployment in which workers are in-between jobs or are searching for new and better jobs is called _______ unemployment",
+            question: "Czy pokarm ma wpływ na higienę jamy ustnej Kota?",
             answers: {
-                A: "frictional",
-                B: "Cyclical",
-                C: "Structral",
+                A: "Nie ma żadnego wpływu",
+                B: "Tylko jeżeli zjada więcej niż 4 posiłki dziennie",
+                C: "Tak, niektóre karmy usuwają kamień nazębny i oczyszczają zęby, działając podobnie jak szczoteczka",
                 D: "Turnover"
+            },
+            correctAnswer: "C"
+        },
+        {
+            question: "Jak powtrzymać Kota od drapania mebli?",
+            answers: {
+                A: "Należy przykryć meble plastikową folią i zaopatrzyć go w odpowiednią ilość drapaków",
+                B: "Okazywaniem czułości wobec Kota i podawaniem mu smakołyków dla odwrócenia uwagi",
+                C: "Nie należy tego powstrzymywać, to naturalny instynkt",
+                D: "600"
             },
             correctAnswer: "A"
         },
         {
-            question: "Consider three consumer goods: 100 of Good A, 100 of Good B, and 100 of Good C.  In the base year, Good A sold at a price of $1, Good B sold at a price of $1, and Good C sold at a price of $1.  In the current year, Good A sold at a price of $3, Good B sold at a price of $5, and Good C sold at a price of $10.  The Consumer Price Index (CPI) for the current year is:?",
+            question: "Na problem z układem moczowym Kota wskazuje:",
             answers: {
-                A: "100",
-                B: "300",
-                C: "500",
-                D: "600"
-            },
-            correctAnswer: "D"
-        },
-        {
-            question: "Which of the following is a loser from unexpected inflation?",
-            answers: {
-                A: "workers with COLAs",
-                B: "the middle class ",
-                C: "people who own Treasury Bills",
+                A: "Brak chęci do zabawy, nawet ulubionymi zabawkami",
+                B: "Brak apetytu",
+                C: "Pojękiwanie podczas załatwiania się, oddawanie moczu poza kuwetą",
                 D: "people who own homes and have fixed-rate mortgages"
             },
             correctAnswer: "C"
         },
         {
-            question: "If the nominal interest rate on a checking account is 2% and the inflation rate is 3% this year, the real interest rate is:",
+            question: "Zęby Kota powinny być czyszczone…",
             answers: {
-                A: "5%",
-                B: "2%",
-                C: "2/3%",
+                A: "Co kilka miesięcy",
+                B: "Raz na rok",
+                C: "Codziennie lub przynajmniej kilka razy w tygodniu",
                 D: "-1%"
             },
-            correctAnswer: "D"
+            correctAnswer: "C"
         },
         {
-            question: "Which of the following would cause the demand curve for automobiles to shift to the left?",
+            question: "Rozszerzone źrenice u Kota:",
             answers: {
-                A: "an increase in the price of the automobiles",
-                B: "an increase in the interest rate paid to borrow money to pay for the automobile",
-                C: "an increase in buyers' incomes",
+                A: "Świadczą o pobudzeniu i zaangażowaniu, np. podczas zabawy",
+                B: "Świadczą o tym, że Kot jest senny i spokojny",
+                C: "Mogą świadczyć zarówno o zaangażowaniu w zabawę, jak i mogą być objawem lęku i przerażenia",
                 D: "an increase in the cost of production of automobiles"
             },
-            correctAnswer: "B"
+            correctAnswer: "C"
         },
         {
-            question: "Suppose it is announced that industry analysts are predicting that decreased oil supplies from Iraq will cause gasoline prices to rise, beginning next month.  In the current week, the announcement would:",
+            question: "Co może wskazywać na cukrzycę u Kota?",
             answers: {
-                A: "shift the supply of gasoline right",
-                B: "shift the demand for gasoline right",
-                C: "shift the demand for gasoline left",
+                A: "Wzmożony głód i pragnienie",
+                B: "Bezsenność Kota",
+                C: "Cukrzyca u Kotów jest bezobjawowa",
                 D: "have no effect on the demand or supply of gasoline"
             },
-            correctAnswer: "B"
+            correctAnswer: "A"
+        },
+        {
+            question: "Najmniej korzystnymi produktami w diecie kota są:",
+            answers: {
+                A: "Jajka, cebula, czosnek, czekolada i rodzynki",
+                B: "Świeże warzywa i owoce, w szczególności słodka marchewka",
+                C: "Kot może jeść wszystko",
+                D: "have no effect on the demand or supply of gasoline"
+            },
+            correctAnswer: "A"
         }
     ];
 
@@ -212,102 +222,102 @@
 
 
 /* ----------- TIMER ----------- */
-
-function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-    };
-}
-
-function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-
-    function updateClock() {
-        var t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        if (t.total <= 0) {
-            clearInterval(timeinterval);
-        }
-    }
-
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-// if there's a cookie with the name myClock, use that value as the deadline
-if(document.cookie && document.cookie.match('myClock')){
-    // get deadline value from cookie
-    var deadline = document.cookie.match(/(^|;)myClock=([^;]+)/)[2];
-}
-
-// otherwise, set a deadline 10 minutes from now and
-// save it in a cookie with that name
-else{
-    // create deadline 10 minutes from now
-    var timeInMinutes = 60;
-    var currentTime = Date.parse(new Date());
-    var deadline = new Date(currentTime + timeInMinutes*60*1000);
-
-    // store deadline in cookie for future reference
-    document.cookie = 'myClock=' + deadline + '; path=/; domain=tcafe.net';
-}
-initializeClock('clockdiv', deadline);
-var timeInMinute = setTimeout(myFunction, 3600000);
-function myFunction() {
-    alert('Time up');
-}
-
-
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-        document.write("Hello, " + user + "!");
-    } else {
-        user = prompt("Please enter your name:","");
-        if (user != "" && user != null) {
-            setCookie("username", user, 30);
-        }
-    }
-}
+//
+// function getTimeRemaining(endtime) {
+//     var t = Date.parse(endtime) - Date.parse(new Date());
+//     var seconds = Math.floor((t / 1000) % 60);
+//     var minutes = Math.floor((t / 1000 / 60) % 60);
+//     var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+//     var days = Math.floor(t / (1000 * 60 * 60 * 24));
+//     return {
+//         'total': t,
+//         'days': days,
+//         'hours': hours,
+//         'minutes': minutes,
+//         'seconds': seconds
+//     };
+// }
+//
+// function initializeClock(id, endtime) {
+//     var clock = document.getElementById(id);
+//     var daysSpan = clock.querySelector('.days');
+//     var hoursSpan = clock.querySelector('.hours');
+//     var minutesSpan = clock.querySelector('.minutes');
+//     var secondsSpan = clock.querySelector('.seconds');
+//
+//     function updateClock() {
+//         var t = getTimeRemaining(endtime);
+//
+//         daysSpan.innerHTML = t.days;
+//         hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+//         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+//         secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+//
+//         if (t.total <= 0) {
+//             clearInterval(timeinterval);
+//         }
+//     }
+//
+//     updateClock();
+//     var timeinterval = setInterval(updateClock, 1000);
+// }
+//
+// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+// // if there's a cookie with the name myClock, use that value as the deadline
+// if(document.cookie && document.cookie.match('myClock')){
+//     // get deadline value from cookie
+//     var deadline = document.cookie.match(/(^|;)myClock=([^;]+)/)[2];
+// }
+//
+// // otherwise, set a deadline 10 minutes from now and
+// // save it in a cookie with that name
+// else{
+//     // create deadline 10 minutes from now
+//     var timeInMinutes = 60;
+//     var currentTime = Date.parse(new Date());
+//     var deadline = new Date(currentTime + timeInMinutes*60*1000);
+//
+//     // store deadline in cookie for future reference
+//     document.cookie = 'myClock=' + deadline + '; path=/; domain=tcafe.net';
+// }
+// initializeClock('clockdiv', deadline);
+// var timeInMinute = setTimeout(myFunction, 3600000);
+// function myFunction() {
+//     alert('Time up');
+// }
+//
+//
+// function setCookie(cname,cvalue,exdays) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//     var expires = "expires=" + d.toGMTString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
+//
+// function getCookie(cname) {
+//     var name = cname + "=";
+//     var decodedCookie = decodeURIComponent(document.cookie);
+//     var ca = decodedCookie.split(';');
+//     for(var i = 0; i < ca.length; i++) {
+//         var c = ca[i];
+//         while (c.charAt(0) == ' ') {
+//             c = c.substring(1);
+//         }
+//         if (c.indexOf(name) == 0) {
+//             return c.substring(name.length, c.length);
+//         }
+//     }
+//     return "";
+// }
+// function checkCookie() {
+//     var user=getCookie("username");
+//     if (user != "") {
+//         alert("Welcome again " + user);
+//         document.write("Hello, " + user + "!");
+//     } else {
+//         user = prompt("Please enter your name:","");
+//         if (user != "" && user != null) {
+//             setCookie("username", user, 30);
+//         }
+//     }
+// }

@@ -90,7 +90,7 @@ border: #dddddd;
     display: block;
 }
 
-.app-wrapper .app .quiz-container .button-wrapper {
+.app-wrapper .app .button-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
