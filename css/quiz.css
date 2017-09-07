@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Light.ttf') format('ttf');
+}
+
+/*
+background :#f5f5f5;
+mint : #00909d;
+border: #dddddd;
+*/
+* {
+    font-family: "Lato-Light";
+}
+
+#xxx {
+    position: relative;
+    padding: 3em;
+    /*background: url('../images/clips.png') no-repeat top left,  url('../images/clips.png') no-repeat top right;*/
+    background-color: #f5f5f5;
+}
+
+#xxx > div.clip {
+    position: absolute;
+    top: 0;
+    width: 7%;
+    min-width: 49px;
+    z-index: 100;
+    /*transform: translate(-50%);*/
+}
+
+#xxx > div.clip img {
+    width: 100%;
+}
+
+#xxx > div:nth-of-type(1) {
+    left: 20%;
+}
+
+#xxx > div:nth-of-type(2) {
+    right: 20%;
+}
+
+
+.app-wrapper {
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.8em 0;
+}
+
+.app-wrapper .app {
+    background: url('../images/bottom-bg.png') no-repeat bottom;
+    height: 700px;
+    width: 90%;
+    margin: 10px 25px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+
+.app-wrapper .app h1 {
+    font-weight: 300;
+    color: #00909d;;
+    font-size: 30px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 1em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.app-wrapper .app .quiz-container {
+    position: relative;
+    height: 49%;
+    width: 90%;
+    margin: 2rem auto 0;
+}
+
+.app-wrapper .app .quiz-container .question {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.app-wrapper .app .quiz-container .answers {
+    margin-bottom: 18px;
+    text-align: left;
+    display: inline-block;
+}
+
+.app-wrapper .app .quiz-container .answers label {
+    display: block;
+}
+
+.app-wrapper .app .quiz-container .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 15%;
+
+}
+
+button {
+    font-size: 18px;
+    background-color: #00909d;
+    color: #fff;
+    border: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 3em;
+    text-align: center;
+    bottom: 6em;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+input {
+    margin-bottom: 0;
+}
+
+.slide {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+#clockdiv {
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #00909d;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #00909d;
+}
+
+.topcorner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.buttomright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
