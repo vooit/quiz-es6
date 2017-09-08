@@ -2,6 +2,36 @@
  * Created by wojciechpac on 07.09.2017.
  */
 
+
+/* --------TIMER--------- */
+
+
+var minutesLabel = document.getElementById("minutes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime()
+{
+    ++totalSeconds;
+    secondsLabel.innerHTML = pad(totalSeconds%60);
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+}
+
+function pad(val)
+{
+    var valString = val + "";
+    if(valString.length < 2)
+    {
+        return "0" + valString;
+    }
+    else
+    {
+        return valString;
+    }
+}
+
+
 (function() {
     const myQuestions = [
         {
@@ -9,8 +39,7 @@
             answers: {
                 A: "Że Kot jest spokojny",
                 B: "Nic konkretnego, to automatyczna pozycja przyjmowana bezwiednie",
-                C: "Że Kot jest zły lub się boi",
-                D: "Quisque lorem tortor fringilla sed, vestibulum id"
+                C: "Że Kot jest zły lub się boi"
             },
             correctAnswer: "C"
         },
@@ -19,9 +48,8 @@
             answers: {
                 A: "Między uszami",
                 B: "Na karku",
-                C: "W okolicach nosa",
-                D: "Cum sociis natoque penatibus et ultrices volutpat. "
-            },
+                C: "W okolicach nosa"
+              },
             correctAnswer: "A"
         },
         {
@@ -29,8 +57,7 @@
             answers: {
                 A: "Że Kot po jednej stronie pyszczka posiada lepsze uzębienie, które lepiej rozdrabnia pokarm",
                 B: "Że Kot ma problemy z uzębieniem",
-                C: "Że Kot ma infekcję gardła",
-                D: "20%"
+                C: "Że Kot ma infekcję gardła"
             },
             correctAnswer: "A"
         },
@@ -39,8 +66,7 @@
             answers: {
                 A: "Nie ma żadnego wpływu",
                 B: "Tylko jeżeli zjada więcej niż 4 posiłki dziennie",
-                C: "Tak, niektóre karmy usuwają kamień nazębny i oczyszczają zęby, działając podobnie jak szczoteczka",
-                D: "Turnover"
+                C: "Tak, niektóre karmy usuwają kamień nazębny i oczyszczają zęby, działając podobnie jak szczoteczka"
             },
             correctAnswer: "C"
         },
@@ -49,8 +75,7 @@
             answers: {
                 A: "Należy przykryć meble plastikową folią i zaopatrzyć go w odpowiednią ilość drapaków",
                 B: "Okazywaniem czułości wobec Kota i podawaniem mu smakołyków dla odwrócenia uwagi",
-                C: "Nie należy tego powstrzymywać, to naturalny instynkt",
-                D: "600"
+                C: "Nie należy tego powstrzymywać, to naturalny instynkt"
             },
             correctAnswer: "A"
         },
@@ -59,8 +84,7 @@
             answers: {
                 A: "Brak chęci do zabawy, nawet ulubionymi zabawkami",
                 B: "Brak apetytu",
-                C: "Pojękiwanie podczas załatwiania się, oddawanie moczu poza kuwetą",
-                D: "people who own homes and have fixed-rate mortgages"
+                C: "Pojękiwanie podczas załatwiania się, oddawanie moczu poza kuwetą"
             },
             correctAnswer: "C"
         },
@@ -69,9 +93,8 @@
             answers: {
                 A: "Co kilka miesięcy",
                 B: "Raz na rok",
-                C: "Codziennie lub przynajmniej kilka razy w tygodniu",
-                D: "-1%"
-            },
+                C: "Codziennie lub przynajmniej kilka razy w tygodniu"
+             },
             correctAnswer: "C"
         },
         {
@@ -79,8 +102,7 @@
             answers: {
                 A: "Świadczą o pobudzeniu i zaangażowaniu, np. podczas zabawy",
                 B: "Świadczą o tym, że Kot jest senny i spokojny",
-                C: "Mogą świadczyć zarówno o zaangażowaniu w zabawę, jak i mogą być objawem lęku i przerażenia",
-                D: "an increase in the cost of production of automobiles"
+                C: "Mogą świadczyć zarówno o zaangażowaniu w zabawę, jak i mogą być objawem lęku i przerażenia"
             },
             correctAnswer: "C"
         },
@@ -89,8 +111,7 @@
             answers: {
                 A: "Wzmożony głód i pragnienie",
                 B: "Bezsenność Kota",
-                C: "Cukrzyca u Kotów jest bezobjawowa",
-                D: "have no effect on the demand or supply of gasoline"
+                C: "Cukrzyca u Kotów jest bezobjawowa"
             },
             correctAnswer: "A"
         },
@@ -99,8 +120,7 @@
             answers: {
                 A: "Jajka, cebula, czosnek, czekolada i rodzynki",
                 B: "Świeże warzywa i owoce, w szczególności słodka marchewka",
-                C: "Kot może jeść wszystko",
-                D: "have no effect on the demand or supply of gasoline"
+                C: "Kot może jeść wszystko"
             },
             correctAnswer: "A"
         }
@@ -219,7 +239,7 @@
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
 })();
-
+console.log('ewwwe')
 
 /* ----------- TIMER ----------- */
 //
