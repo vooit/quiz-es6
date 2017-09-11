@@ -3,35 +3,6 @@
  */
 
 
-/* --------TIMER--------- */
-
-
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-
-function setTime()
-{
-    ++totalSeconds;
-    secondsLabel.innerHTML = pad(totalSeconds%60);
-    minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
-}
-
-function pad(val)
-{
-    var valString = val + "";
-    if(valString.length < 2)
-    {
-        return "0" + valString;
-    }
-    else
-    {
-        return valString;
-    }
-}
-
-
 (function() {
     const myQuestions = [
         {
@@ -89,7 +60,7 @@ function pad(val)
             correctAnswer: "C"
         },
         {
-            question: "Zęby Kota powinny być czyszczone…",
+            question: "Zęby Kota powinny być czyszczone:",
             answers: {
                 A: "Co kilka miesięcy",
                 B: "Raz na rok",
@@ -125,6 +96,40 @@ function pad(val)
             correctAnswer: "A"
         }
     ];
+
+
+    /* --------TIMER--------- */
+
+    var totalSeconds = 0;
+
+    timer = setInterval(setTime, 1000);
+    function setTime()
+    {
+        ++totalSeconds;
+        secondsLabel.innerHTML = pad(totalSeconds%60);
+        minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+    }
+
+    function pad(val)
+    {
+        var valString = val + "";
+        if(valString.length < 2)
+        {
+            return "0" + valString;
+        }
+        else
+        {
+            return valString;
+        }
+    }
+    var minutesLabel = document.getElementById("minutes");
+    var secondsLabel = document.getElementById("seconds");
+
+    function clear() {
+        clearInterval(timer);
+    }
+
+
 
     function buildQuiz() {
         // we'll need a place to store the HTML output
@@ -189,7 +194,8 @@ function pad(val)
     });
 
         // show number of correct answers out of total
-        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+        resultsContainer.innerHTML = `Poprawnych odpowiedzi ${numCorrect} z ${myQuestions.length}`;
+        clear();
     }
 
     function showSlide(n) {
@@ -234,12 +240,17 @@ function pad(val)
 
     showSlide(0);
 
+
+
+
+
     // on submit, show results
     submitButton.addEventListener("click", showResults);
+    // submitButton.addEventListener("click", clear);/
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
 })();
-console.log('ewwwe')
+
 
 /* ----------- TIMER ----------- */
 //
